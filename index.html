@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weather</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+</head>
+<body>
+	<div>
+	<center><h1 id="output">Temperature</h1></center>
+	<center>Enter the city name: <br><input id="city"></center>
+	<br>
+	<br>
+	<center><button onclick="show()">Submit</button></center>
+    </div>
+	<script type="text/javascript">
+		function show(){
+			city=document.getElementById("city").value;
+
+			httpRequest=new XMLHttpRequest();
+			url="https://api.weatherbit.io/v2.0/current?city="+city+"&key=3303df2d1fc349738685bf85fcbc78cd";
+			httpRequest.open("GET", url);
+			httpRequest.send();
+			httpRequest.onreadystatechange=function(){
+				if(this.readyState==4 && this.status==200)
+				{
+					user_data=JSON.parse(this.responseText);
+					document.getElementById("output").innerHTML=user_data.data[0].temp+"℃";
+				}
+			}
+		}
+	</script>
+</body>
+</html>
