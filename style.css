@@ -1,7 +1,7 @@
 html, body {
-    margin: 0px;
+	margin: 0px;
     height: 100%;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#311847), to(#3EB9E6));
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#311847), to(#3EB9E6));
     background-image: -webkit-linear-gradient(top, #311847, #3EB9E6);
     background-image: -moz-linear-gradient(top, #311847, #3EB9E6);
     background-image: linear-gradient(to bottom, #311847, #3EB9E6);
@@ -17,6 +17,7 @@ p{
     font-size: 50px;
     color: white;
 }
+
 div{
     position: absolute;
     top:  50%;
@@ -27,8 +28,8 @@ div{
 .made-by{
     color: white;
     position: fixed;
-    bottom: 0px;
-    right: 0px;
+    top: 0px;
+    left: 2px;
     padding: 10px;
     font-size: 18px;
 }
