@@ -1,12 +1,34 @@
 html, body {
-	margin: 0px;
+    margin: 0px;
     height: 100%;
-	background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#311847), to(#3EB9E6));
+    background-image: -webkit-linear-gradient(top, #311847, #3EB9E6);
+    background-image: -moz-linear-gradient(top, #311847, #3EB9E6);
+    background-image: linear-gradient(to bottom, #311847, #3EB9E6);
+    font-family: 'Abel', sans-serif;
 }
 
+h1{
+    font-size: 35px;
+    color: white;
+}
+
+p{
+    font-size: 50px;
+    color: white;
+}
 div{
     position: absolute;
     top:  50%;
     left: 50%;
     transform: translate(-50%,-50%);
+}
+
+.made-by{
+    color: white;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    padding: 10px;
+    font-size: 18px;
 }
